@@ -7,6 +7,8 @@
 #define LED_ORANGE_1 _LATJ4 
 #define LED_ROUGE_1 _LATJ11
 #define LED_VERTE_1 _LATH10
+
+
 #define LED_BLEUE_2 _LATA9
 #define LED_ROUGE_2 _LATA10
 #define LED_VERTE_2 _LATH3
@@ -14,8 +16,11 @@
 #define LED_ORANGE_2 _LATK15
 
 // Prototypes fonctions
+
 void InitIO();
 void LockIO();
 void UnlockIO();
 
-#endif /* IO_H */
+#endif 
+/* IO_H */
+
