@@ -5,13 +5,17 @@
 #include "IO.h"
 #include "timer.h"
 #include "PWM.h"
+
+
+
 int main (void){
     InitOscillator();
     InitIO();
     InitTimer1();
     InitTimer23();
     InitPWM();
-    PWMSetSpeed(0);
+    PWMSetSpeedConsigne(10, MOTEUR_GAUCHE);
+    PWMSetSpeedConsigne(10, MOTEUR_DROIT);
     LED_BLANCHE_1 = 1;
     LED_BLEUE_1 = 1;
     LED_ORANGE_1 = 1;
